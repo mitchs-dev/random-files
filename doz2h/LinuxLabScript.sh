@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ "$1" == "EasterEgg" ]]; then
+if [[ "$1" == "runSpecial" ]]; then
    echo "
                          ------------------------
                          YOU FOUND THE EASTER EGG
