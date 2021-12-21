@@ -1,12 +1,10 @@
 #!/bin/bash
-EASTEREGG=" _     _                   ___                      _          _                                                                      
-| |   | |                 / __)                    | |     _  | |                                _                                    
-| |___| | ___  _   _    _| |__ ___  _   _ ____   __| |   _| |_| |__  _____    _____ _____  ___ _| |_ _____  ____    _____  ____  ____ 
-|_____  |/ _ \| | | |  (_   __) _ \| | | |  _ \ / _  |  (_   _)  _ \| ___ |  | ___ (____ |/___|_   _) ___ |/ ___)  | ___ |/ _  |/ _  |
- _____| | |_| | |_| |    | | | |_| | |_| | | | ( (_| |    | |_| | | | ____|  | ____/ ___ |___ | | |_| ____| |      | ____( (_| ( (_| |
-(_______|\___/|____/     |_|  \___/|____/|_| |_|\____|     \__)_| |_|_____)  |_____)_____(___/   \__)_____)_|      |_____)\___ |\___ |
-                                                                                                                         (_____(_____|
-                                         
+if [[ "$1" == "EasterEgg" ]]; then
+   echo "
+                         ------------------------
+                         YOU FOUND THE EASTER EGG
+                         ------------------------
+
                                 ████████                                  
                               ██        ██                                
                             ██▒▒▒▒        ██                              
@@ -23,9 +21,7 @@ EASTEREGG=" _     _                   ___                      _          _
                           ██▒▒              ██                            
                             ████        ████                              
                                 ████████"
-if [[ "$1" == "EasterEgg" ]]; then
-   echo $EASTEREGG
 else
-echo "Hello $USER - You downloaded and ran the script! :D"
-echo "Did you know that you are currently in $PWD?"
+   echo "Hello $USER - You downloaded and ran the script! :D"
+   echo "Did you know that you are currently in '"$PWD"' for your working directory?"
 fi
